@@ -1,0 +1,25 @@
+{
+  "name": "Facebook MD Formatter",
+  "description": "",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/*",
+        "https://facebook.com/*"
+      ],
+      "js": [
+        "src/jquery.js",
+        "src/markdown-it.min.js",
+        "src/Main.js"
+      ],
+      "css": [
+        "src/github-markdown-light.css"
+      ]
+    }
+  ]
+}
